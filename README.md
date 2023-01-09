@@ -1,15 +1,15 @@
 # HubX Frontend Assignment
 
-Please implement the design with responsive, mobile-first approach and cross-browser support. Make sure to format and lint your code before submitting it.
+Please implement the given design with responsive, mobile-first approach and cross-browser support and try to follow it as closely as possible. The functionality described in the Figma file needs to be implemented for this assignment to be completed successfully. Make sure to format and lint your code before submitting it.
 
 ## Design
 
+Figma design URL:
+
 > Please see the example desktop and mobile animation videos in the design file.
 
-Figma Design URL:
-
 ```
-https://www.figma.com/proto/fqq3IGqxAiIUEItAWHZ54W/Frontend-Case-(HubX)?page-id=0%3A1&node-id=1%3A471&viewport=1357%2C459%2C0.15&scaling=min-zoom&starting-point-node-id=1%3A471
+https://www.figma.com/proto/fqq3IGqxAiIUEItAWHZ54W
 ```
 
 ## Start development server
