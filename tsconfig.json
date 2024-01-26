@@ -19,12 +19,12 @@
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
   },
   "include": ["**/*.ts", "**/*.tsx"],
   "references": [
     {
-      "path": "./tsconfig.vite.json"
-    }
-  ]
+      "path": "./tsconfig.vite.json",
+    },
+  ],
 }
