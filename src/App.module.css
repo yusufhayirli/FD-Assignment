@@ -1,3 +1,255 @@
 .main {
-  display: block;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.menuContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f7f7f7;
+  overflow: hidden;
+  position: relative;
+}
+
+.menuItem {
+  display: flex !important;
+  flex-direction: row;
+  width: 20%;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 5rem;
+  justify-content: center;
+  gap: 1rem;
+  background-color: white;
+}
+
+.menuItemSelected {
+  background-color: #e6f0ff;
+}
+
+.menuItemSelected .icon,
+.menuItemSelected .label {
+  color: #007bff;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.itemLabel {
+  font-size: larger;
+  font-weight: 600;
+}
+
+.selectedContentField {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.selectedContentField h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #6495ED;
+}
+
+.selectedContentField h2 {
+  font-weight: 600;
+}
+
+.selectedContentField span,
+.selectedContentField .TextField {
+  padding: 1rem 0;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+.label {
+  font-size: 12px;
+}
+
+.slick-list {
+  padding: 0 !important;
+}
+
+.media,
+.description {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 5rem;
+  position: relative;
+  height: 100%;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 75vh;
+}
+
+.learnMoreButton {
+  border-radius: inherit !important;
+  border-color: lightgray;
+  background-color: #007bff;
+}
+
+@keyframes smooth-appear {
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.PhoneLayout,
+.FirstBatchImage,
+.SecondBatchImage,
+.ThirdBatchImage,
+.Vector,
+.PDFImage,
+.JPGImage,
+.TXTImage {
+  position: absolute;
+  bottom: -100%;
+  opacity: 0;
+  animation: smooth-appear 1.5s ease forwards;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Vector {
+  transform: translate(-14rem, -2rem);
+}
+
+.PDFImage {
+  transform: translate(-15rem, -2rem);
+}
+
+.JPGImage {
+  transform: translate(-5rem, -4rem);
+}
+
+.TXTImage {
+  transform: translate(4rem, -2rem);
+}
+
+.FirstBatchImage {
+  transform: translate(-8rem, -1rem);
+}
+
+.LeftBarImage,
+.RightBarImage,
+.SignatureImage,
+.CompletedImage {
+  position: absolute;
+}
+
+.LeftBarImage {
+  top: 6rem;
+  right: 22rem;
+}
+
+.RightBarImage {
+  top: 6rem;
+  left: 22rem;
+}
+
+.SignatureImage {
+  top: 15rem;
+  right: 17rem;
+}
+
+.CompletedImage {
+  top: 10rem;
+  left: 17rem;
+}
+
+.ContentDiv {
+  padding: 0 3rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.5);
+  }
+}
+
+.SignatureImage,
+.CompletedImage {
+  animation: pop 0.5s linear 1;
+}
+
+.LeftBarImage,
+.RightBarImage {
+  animation: fadeIn 3s;
+}
+
+@media screen and (min-width: 1000px) {
+  .main {
+    margin-top: 5rem;
+  }
+
+  .contentWrapper {
+    flex-direction: row;
+    height: 50vh;
+  }
+
+  .selectedContentField {
+    background-color: white;
+    bottom: 0;
+    align-content: center;
+    line-height: 2rem;
+  }
+
+  .description {
+    text-align: end;
+  }
+
+  .media,
+  .description {
+    width: 50%;
+  }
+
+  .menuItem {
+    border: 4px solid transparent;
+    background-color: white;
+  }
+
+  .menuItemSelected {
+    background-color: #e6f0ff;
+  }
+
+  .menuItem:hover {
+    border-color: #007bff;
+  }
 }
